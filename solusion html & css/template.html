@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- header component -->
+    <section class="header">
+        <div class="col-menu">
+            <ul class="top-menu">
+                <li>
+                    <a href="#">Online store</a>
+                </li>
+                <li>Quotes</li>
+                <li>👋 Contract us</li>
+            </ul>
+        </div>
+        <div class="col-country">
+            <div class="country-select-component">
+                <div class="country-select" id="country-select">
+                    <div id="content-select">
+                        <div class="country-option">
+                            <img class="flag-option" src="./images/flag-asutralia.png" alt="flag-asutralia">
+                            <span class="name-country-option">Australia</span>
+                        </div>
+                    </div>
+                    <svg class="icon-select" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                        fill="currentColor" viewBox="0 5 14 14">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </div>
+                <div class="hide" id="list-option-countries">
+                    <div class="country-option" id="option-1">
+                        <img class="flag-option" src="./images/flag-asutralia.png" alt="flag-asutralia">
+                        <span class="name-country-option">Australia</span>
+                    </div>
+                    <div class="country-option" id="option-2">
+                        <img class="flag-option" src="./images/flag-vietnam.png" alt="flag-vietnam">
+                        <span class="name-country-option">Vietnam</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end header component -->
+
+    <!-- options component -->
+    <section class="options">
+        <div class="col-option-1">
+            <div class="col-option-element">
+                <h1 class="title">
+                    inke.
+                </h1>
+            </div>
+            <div class="col-option-element">
+                <select class="custom-select bg-gray" name="unknown-1">
+                    <option value="shop">Shop</option>
+                    <option value="1">unknown</option>
+                    <option value="2">unknown</option>
+                </select>
+            </div>
+            <div class="col-option-element">
+                <select class="custom-select  bg-gray" name="unknown-2">
+                    <option value="resource">Resource</option>
+                    <option value="1">unknown</option>
+                    <option value="2">unknown</option>
+                </select>
+            </div>
+            <div class="col-option-element">
+                <select class="custom-select bg-violet" name="unknown-3">
+                    <option value="sustainability">Sustainability</option>
+                    <option value="1">unknown</option>
+                    <option value="2">unknown</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-option-2">
+            <div class="col-option-element list-icon">
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                    </svg>
+                </div>
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-heart" viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                    </svg>
+                </div>
+                <div class="item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                    <div class="node"></div>
+                </div>
+            </div>
+            <div class="col-option-element left-line">
+                <select class="custom-select " name="unknown-4">
+                    <option value="dashboard">Dashboard</option>
+                    <option value="unknown-1">1</option>
+                    <option value="unknown-2">2</option>
+                </select>
+            </div>
+            <div class="col-option-element">
+                <img src="./images/js-logo.webp" class="logo" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end options component -->
+
+    <!-- main component -->
+    <br><br>
+    <section class="main">
+        <div class="col-categories">
+            <div class="category-container">
+                <div class="category-item">
+                    <h3 class="category-title">
+                        Framework
+                    </h3>
+                    <img class="category-image" src="./images/image 1.PNG" alt="image-1">
+                    <p class="category-content">
+                        Get start with 5 options from just $25* refunded when you place a full order with us
+                    </p>
+                    <button class="category-button btn">
+                        Unknown
+                    </button>
+                </div>
+                <div class="category-item">
+                    <h3 class="category-title">
+                        Eco-badges
+                    </h3>
+                    <img class="category-image" src="./images/image2.PNG" alt="image-2">
+                    <p class="category-content">
+                        Get start with 5 options from just $25* refunded when you place a full order with us
+                    </p>
+                    <button class="category-button btn">
+                        Unknown
+                    </button>
+                </div>
+                <div class="category-item">
+                    <h3 class="category-title">
+                        Contributions
+                    </h3>
+                    <img class="category-image" src="./images/image3.PNG" alt="image-3">
+                    <p class="category-content">
+                        Get start with 5 options from just $25* refunded when you place a full order with us
+                    </p>
+                    <button class="category-button btn">
+                        Unknown
+                    </button>
+                </div>
+                <div class="category-item">
+                    <h3 class="category-title">
+                        Framework
+                    </h3>
+                    <img class="category-image" src="./images/image4.PNG" alt="image-4">
+                    <p class="category-content">
+                        Get start with 5 options from just $25* refunded when you place a full order with us
+                    </p>
+                    <button class="category-button btn">
+                        Unknown
+                    </button>
+                </div>
+                <div class="category-item">
+                    <h3 class="category-title">
+                        Eco-badges
+                    </h3>
+                    <img class="category-image" src="./images/image6.PNG" alt="image-6">
+                    <p class="category-content">
+                        Get start with 5 options from just $25* refunded when you place a full order with us
+                    </p>
+                    <button class="category-button btn">
+                        Unknown
+                    </button>
+                </div>
+                <div class="category-item">
+                    <h3 class="category-title">
+                        Contributions
+                    </h3>
+                    <img class="category-image" src="./images/image7.PNG" alt="image-7">
+                    <p class="category-content">
+                        Get start with 5 options from just $25* refunded when you place a full order with us
+                    </p>
+                    <button class="category-button btn">
+                        Unknown
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-learn">
+            <div class="learn-container">
+                <h3>Learn</h3>
+                <div class="learn-item">
+                    <img class="learn-image" src="./images/image4.PNG" alt="image-4">
+                    <div class="col-item-details">
+                        <h3 class="learn-title">Title of blog</h3>
+                        <a href="#">See more</a>
+                    </div>
+                    <div class="btn button-item-new">
+                        New
+                    </div>
+                </div>
+                <div class="learn-item">
+                    <img class="learn-image" src="./images/image6.PNG" alt="image-6">
+                    <div class="col-item-details">
+                        <h3 class="learn-title">Something</h3>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+                <div class="learn-item">
+                    <img class="learn-image" src="./images/image7.PNG" alt="image-7">
+                    <div class="col-item-details">
+                        <h3 class="learn-title">Something</h3>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end main component -->
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- end script -->
+</body>
+
+</html>

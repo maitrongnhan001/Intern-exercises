@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* css for header component */
+.header {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px rgb(200, 199, 199) solid;
+    position: relative;
+    z-index: 100;
+}
+
+.col-menu {
+    height: 100%;
+}
+
+.col-menu .top-menu {
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col-menu .top-menu li {
+    padding: 20px 40px;
+    border-right: 1px rgb(200, 199, 199) solid;
+    font-size: 15px;
+}
+
+.col-menu .top-menu li:hover {
+    cursor: pointer;
+}
+
+.col-country {
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.country-select-component {
+    width: 170px;
+    position: relative;
+    top: 10px;
+    right: 40px;
+    border-radius: 5px;
+}
+
+.country-select {
+    width: 170px;
+    height: 40px;
+    display: flex;
+    border-radius: 5px;
+    transition: 0.1s all ease;
+}
+
+.country-select:hover {
+    cursor: pointer;
+    background-color: #efefef;
+}
+
+.country-select .country-option {
+    width: 130px;
+    height: 100%;
+}
+
+.country-select .icon-select {
+    position: relative;
+    top: 18px;
+    left: 5px;
+}
+
+.show {
+    display: block;
+    background-color: #efefef;
+    border-radius: 5px;
+}
+
+.show .country-option:hover {
+    background-color: #9f9e9e;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.country-option {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    transition: 0.2s all ease;
+}
+
+.country-option .name-country-option {
+    line-height: 40px;
+    font-size: 13px;
+    margin-left: 5px;
+    color: rgb(70, 69, 69);
+}
+
+.country-option .flag-option {
+    width: 40px;
+    height: 25px;
+    position: relative;
+    top: 7.5px;
+    margin-left: 10px;
+}
+
+/* css for option component */
+
+.options {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px rgb(200, 199, 199) solid;
+    position: relative;
+    z-index: 10;
+}
+
+.col-option-1 {
+    align-items: center;
+    display: flex;
+}
+
+.col-option-element {
+    margin: 0 10px;
+}
+
+.title {
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.custom-select {
+    width: 115px;
+    height: 33px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.custom-select:hover{
+    cursor: pointer;
+}
+
+.custom-select option {
+    font-size: 17px;
+}
+
+.bg-gray {
+    background-color: #efefef;
+}
+
+.bg-violet {
+    background-color: rgb(230, 224, 255);
+}
+
+.col-option-2 {
+    align-items: center;
+    display: flex;
+    position: relative;
+    right: 40px;
+}
+
+.list-icon {
+    display: flex;
+}
+
+.list-icon .item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px rgb(200, 199, 199) solid;
+    transition: 0.1 all ease;
+    margin: 0 2.5px;
+}
+
+.list-icon .item svg {
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.list-icon .active {
+    border: 1px blue solid;
+}
+
+.list-icon .active .node {
+    background-color: blue;
+    width: 7px;
+    height: 7px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50%;
+}
+
+.list-icon .item:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.left-line {
+    border-left: 1px rgb(200, 199, 199) solid;
+}
+
+.left-line .custom-select {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+/* css for main component */
+
+.main {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex
+}
+
+.col-categories {
+    width: 70%;
+}
+
+.category-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-container .category-item {
+    width: 250px;
+    /* float: left; */
+    margin-left: 30px;
+}
+
+.category-item .category-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.category-item .category-content {
+    font-size: 11px;
+    text-align: justify;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.category-item .category-button {
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.2s all ease;
+}
+
+.category-item .category-button:hover{
+    background-color: #9f9e9e;
+    cursor: pointer;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.col-learn {
+    width: 30%;
+}
+
+.learn-item {
+    width: 100%;
+    margin: 30px auto;
+    display: flex
+}
+
+.learn-image {
+    width: 130px;
+    border-radius: 5px;
+}
+
+.col-item-details {
+    width: 120px;
+    margin-left: 20px;
+}
+
+.learn-title {
+    color: rgb(54, 54, 112);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.col-item-details a {
+    color: rgb(200, 199, 199);
+}
+
+.col-item-details a:hover{
+    color: rgb(141, 139, 139);
+}
+
+.button-item-new {
+    height: 25px;
+    padding: 0 20px;
+    font-size: 10px;
+    color: green;
+    background-color: rgb(200, 239, 200);
+    line-height: 25px;
+}
