@@ -12,7 +12,7 @@
 <body>
     <!-- header component -->
     <section class="header">
-        <div class="col-menu">
+        <div class="col-menu" id="col-menu">
             <ul class="top-menu">
                 <li>
                     <a href="#">Online store</a>
@@ -22,6 +22,26 @@
             </ul>
         </div>
         <div class="col-country">
+            <div id="icon-show-menu">
+                <div class="icon-show-menu" id="content-icon-show-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <span>Menu</span>
+                </div>
+                <div class="hide" id="content-icon-close-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                        <path fill-rule="evenodd"
+                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                    </svg>
+                    <span>close</span>
+                </div>
+            </div>
             <div class="country-select-component">
                 <div class="country-select" id="country-select">
                     <div id="content-select">
@@ -36,7 +56,7 @@
                             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                     </svg>
                 </div>
-                <div class="hide" id="list-option-countries">
+                <div class="hide list-options" id="list-option-countries">
                     <div class="country-option" id="option-1">
                         <img class="flag-option" src="./images/flag-asutralia.png" alt="flag-asutralia">
                         <span class="name-country-option">Australia</span>
@@ -60,21 +80,21 @@
                 </h1>
             </div>
             <div class="col-option-element">
-                <select class="custom-select bg-gray" name="unknown-1">
+                <select class="custom-select responsive-option-element bg-gray" name="unknown-1">
                     <option value="shop">Shop</option>
                     <option value="1">unknown</option>
                     <option value="2">unknown</option>
                 </select>
             </div>
             <div class="col-option-element">
-                <select class="custom-select  bg-gray" name="unknown-2">
+                <select class="custom-select responsive-option-element bg-gray" name="unknown-2">
                     <option value="resource">Resource</option>
                     <option value="1">unknown</option>
                     <option value="2">unknown</option>
                 </select>
             </div>
             <div class="col-option-element">
-                <select class="custom-select bg-violet" name="unknown-3">
+                <select class="custom-select responsive-option-element bg-violet" name="unknown-3">
                     <option value="sustainability">Sustainability</option>
                     <option value="1">unknown</option>
                     <option value="2">unknown</option>
@@ -106,15 +126,17 @@
                     <div class="node"></div>
                 </div>
             </div>
-            <div class="col-option-element left-line">
-                <select class="custom-select " name="unknown-4">
-                    <option value="dashboard">Dashboard</option>
-                    <option value="unknown-1">1</option>
-                    <option value="unknown-2">2</option>
-                </select>
-            </div>
-            <div class="col-option-element">
-                <img src="./images/js-logo.webp" class="logo" alt="">
+            <div class="option-responsive-container">
+                <div class="col-option-element left-line">
+                    <select class="custom-select " name="unknown-4">
+                        <option value="dashboard">Dashboard</option>
+                        <option value="unknown-1">1</option>
+                        <option value="unknown-2">2</option>
+                    </select>
+                </div>
+                <div class="col-option-element">
+                    <img src="./images/js-logo.webp" class="logo" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -200,8 +222,8 @@
             </div>
         </div>
         <div class="col-learn">
+            <h3>Learn</h3>
             <div class="learn-container">
-                <h3>Learn</h3>
                 <div class="learn-item">
                     <img class="learn-image" src="./images/image4.PNG" alt="image-4">
                     <div class="col-item-details">

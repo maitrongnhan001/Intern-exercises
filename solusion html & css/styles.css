@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
 }
 
 /* css for header component */
@@ -53,6 +54,10 @@ body {
     border-radius: 5px;
 }
 
+.icon-show-menu {
+    display: none;
+}
+
 .country-select {
     width: 170px;
     height: 40px;
@@ -77,20 +82,19 @@ body {
     left: 5px;
 }
 
-.show {
-    display: block;
+.list-options {
     background-color: #efefef;
     border-radius: 5px;
 }
 
-.show .country-option:hover {
+.list-options .country-option:hover {
     background-color: #9f9e9e;
     border-radius: 5px;
 }
 
 .hide {
     display: none;
-}
+} 
 
 .country-option {
     width: 100%;
@@ -112,6 +116,105 @@ body {
     position: relative;
     top: 7.5px;
     margin-left: 10px;
+}
+
+/* responsive for header component */
+@media screen and (min-width: 701px) {
+    .col-menu {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        flex-direction: column-reverse;
+        /* top: 60px; */
+    }
+
+    .col-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    .top-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .top-menu li {
+        text-align: center;
+        background-color: #fff;
+        border-bottom: 1px rgb(200, 199, 199) solid;
+    }
+
+    .top-menu li:hover {
+        background-color: #efefef;
+    }
+
+    .col-country {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon-show-menu {
+        display: flex;
+        padding: 5px 20px;
+        border: 1px #9f9e9e solid;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        position: relative;
+        top: 10px;
+        left: 20px;
+        transition: 0.2s all ease;
+    }
+
+    .icon-show-menu:hover{
+        background-color: #efefef;
+        cursor: pointer;
+    }
+
+    .icon-show-menu svg {
+        position: relative;
+        top: 7px;
+    }
+
+    .icon-show-menu span {
+        margin-left: 10px;
+    }
+
+    .country-select-component {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .country-select-component {
+        width: 90px;
+    }
+
+    .country-select {
+        width: 90px;
+        /* justify-content: center; */
+    }
+
+    .country-select {
+        width: 90px;
+    }
+
+    .country-select .country-option {
+        width: 60px;
+    }
+
+    /* #list-option-countries .country-option {
+        justify-content: center;
+    } */
+
+    .country-option .name-country-option {
+        display: none;
+    }
 }
 
 /* css for option component */
@@ -216,6 +319,10 @@ body {
     border-left: 1px rgb(200, 199, 199) solid;
 }
 
+.option-responsive-container {
+    display: flex;
+}
+
 .left-line .custom-select {
     margin-left: 10px;
     width: 100px;
@@ -232,10 +339,70 @@ body {
     cursor: pointer;
 }
 
+/* responsive options component */
+@media screen and (max-width: 900px) {
+    .options {
+        flex-direction: column-reverse;
+        height: 180px;
+    }
+
+    .col-option-1 {
+        justify-content: center;
+    }
+
+    .col-option-2 {
+        right: 0;
+        justify-content: center;
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .options {
+        height: 250px
+    }
+
+    .col-option-1 {
+        flex-direction: column;
+    }
+
+    .col-option-1 .col-option-element .title {
+        margin-left: 0;
+    }
+
+    .col-option-1 .responsive-option-element {
+        width: 200px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .options {
+        height: 310px
+    }
+
+    .col-option-2 {
+        flex-direction: column-reverse;
+    }
+
+    .option-responsive-container {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .left-line {
+        border: none;
+    }
+
+    .left-line .custom-select {
+        width: 100px;
+    }
+}
+
 /* css for main component */
 
 .main {
-    width: 100%;
+    width: 90%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0;
@@ -252,12 +419,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
 }
 
 .category-container .category-item {
     width: 250px;
-    /* float: left; */
-    margin-left: 30px;
 }
 
 .category-item .category-image {
@@ -332,4 +498,28 @@ body {
     color: green;
     background-color: rgb(200, 239, 200);
     line-height: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .col-categories {
+        width: 100%;
+    }
+
+    .col-learn {
+       width: 100%;
+    }
+
+    .learn-container {
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .learn-container .learn-item {
+        margin-right: 20px;
+    }
 }
